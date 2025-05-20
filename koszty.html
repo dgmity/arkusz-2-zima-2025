@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montaż paneli podłogowych</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="grafika/montaz_paneli.png" alt="firma usługowa">
+    </header>
+    <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="oferta.html">Oferta</a>
+        <a href="koszty.html">Kalkulator kosztów</a>
+    </nav>
+    <main>
+        <h1>Kalkulator kosztów montaża</h1>
+
+        <label>Szerokość pomieszczenia [m]: <input type="number" name="szerokosc" id="szerokosc"></label>
+        <label>Długość pomieszczenia [m]: <input type="number" name="dlugosc" id="dlugosc"></label><br>
+
+        <p>Typ panelu</p>
+
+        <label class="radio-option">
+            <input type="radio" name="typ_paneli" value="laminowane" id="laminowane">
+            Panele laminowane
+        </label><br>
+
+        <label class="radio-option">
+            <input type="radio" name="typ_paneli" value="winylowe" id="winylowe">
+            Panele winylowe
+        </label><br>
+
+        <label class="radio-option">
+            <input type="radio" name="typ_paneli" value="deska" id="deska">
+            Deska podłogowa
+        </label><br>
+
+        <input type="button" value="Oblicz" onclick="obliczanie()" id="obliczButton">
+
+        <p id="wyniki"></p>
+    </main>
+    <footer>
+        <h5>Autor strony: Maksim Buranok</h5>
+    </footer>
+</body>
+</html>
